@@ -11,8 +11,8 @@ package business;
 public class Employee {
     
     private String name;
-    private String employee_ID;
-    private String age;
+    private int employee_ID;
+    private int age;
     private String gender;
     private String start_Date;
     private String level;
@@ -22,7 +22,7 @@ public class Employee {
     private String emailAddr;
     private String imageFilePath;
 
-    public Employee(String name, String employee_ID, String age, String gender, String start_Date, String level, String team_info, String position_Title, String cellPhoneNumber, String emailAddr, String imageFilePath) {
+    public Employee(String name, int employee_ID, int age, String gender, String start_Date, String level, String team_info, String position_Title, String cellPhoneNumber, String emailAddr, String imageFilePath) {
         this.name = name;
         this.employee_ID = employee_ID;
         this.age = age;
@@ -56,19 +56,19 @@ public class Employee {
         this.name = name;
     }
 
-    public String getEmployee_ID() {
+    public int getEmployee_ID() {
         return employee_ID;
     }
 
-    public void setEmployee_ID(String employee_ID) {
+    public void setEmployee_ID(int employee_ID) {
         this.employee_ID = employee_ID;
     }
 
-    public String getAge() {
+    public int getAge() {
         return age;
     }
 
-    public void setAge(String age) {
+    public void setAge(int age) {
         this.age = age;
     }
 

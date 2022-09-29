@@ -26,8 +26,8 @@ public class MainFrame extends javax.swing.JFrame {
     }
     
     public void addEmployee(ArrayList employeeList){
-        Employee emp1 = new Employee("heldon", "1234","34","male","2022-09-15","loser","losersquare","loser","12356","er@gmail.com","C:\\Users\\Admin\\Desktop\\1663873088650.jpg");
-        Employee emp2 = new Employee("spandana", "002768462","23","female","2022-09-16","winner","winner town","CEO","12352346","winner@gmail.com","C:\\Users\\Admin\\Desktop\\1663873088650.jpg");
+        Employee emp1 = new Employee("heldon", 1234,34,"male","2022-09-15","loser","losersquare","loser","12356","er@gmail.com","C:\\Users\\Admin\\Desktop\\1663873088650.jpg");
+        Employee emp2 = new Employee("spandana",2768462,23,"female","2022-09-16","winner","winner town","CEO","12352346","winner@gmail.com","C:\\Users\\Admin\\Desktop\\1663873088650.jpg");
         employeeList.add(emp1);
         employeeList.add(emp2);
     }
@@ -92,28 +92,29 @@ public class MainFrame extends javax.swing.JFrame {
         crudPanelLayout.setHorizontalGroup(
             crudPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(crudPanelLayout.createSequentialGroup()
-                .addGap(0, 0, Short.MAX_VALUE)
-                .addGroup(crudPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(btn_Create, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btn_Read, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btn_Update, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btn_Delete, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addComponent(btn_Search, javax.swing.GroupLayout.Alignment.TRAILING)))
+                .addContainerGap()
+                .addGroup(crudPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                    .addComponent(btn_Create, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_Update, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_Delete, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_Search, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btn_Read, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         crudPanelLayout.setVerticalGroup(
             crudPanelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(crudPanelLayout.createSequentialGroup()
-                .addGap(125, 125, 125)
+                .addGap(126, 126, 126)
                 .addComponent(btn_Create, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(30, 30, 30)
+                .addGap(18, 18, 18)
                 .addComponent(btn_Read, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(30, 30, 30)
+                .addGap(18, 18, 18)
                 .addComponent(btn_Update, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGap(31, 31, 31)
+                .addGap(18, 18, 18)
                 .addComponent(btn_Delete, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addGap(18, 18, 18)
                 .addComponent(btn_Search)
-                .addGap(121, 121, 121))
+                .addGap(157, 157, 157))
         );
 
         splitPanel.setLeftComponent(crudPanel);

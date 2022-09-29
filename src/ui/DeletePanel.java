@@ -97,9 +97,10 @@ public class DeletePanel extends javax.swing.JPanel {
     private void delete_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_delete_btnActionPerformed
         // TODO add your handling code here:
         String y = delete_textField.getText();
+        int z = Integer.parseInt(y);
         
         for(int i = 0; i<employeeList.size(); i++){
-            if(employeeList.get(i).getEmployee_ID().equals(y)){
+            if(employeeList.get(i).getEmployee_ID() == z){
                 employeeList.remove(i);
             }
         
