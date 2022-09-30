@@ -127,8 +127,6 @@ public class SearchPanel extends javax.swing.JPanel {
         
         if("Name".equals(x)){
             String y = searchBy_textField.getText();
-            
-            
         }
     }//GEN-LAST:event_searchByComboBoxActionPerformed
 

@@ -21,13 +21,13 @@ public class MainFrame extends javax.swing.JFrame {
     
     public MainFrame() {
         initComponents();
-        employeeList = new ArrayList<Employee>(); 
+        employeeList = new ArrayList(); 
         addEmployee(employeeList);
     }
     
-    public void addEmployee(ArrayList employeeList){
-        Employee emp1 = new Employee("heldon", 1234,34,"male","2022-09-15","loser","losersquare","loser","12356","er@gmail.com","C:\\Users\\Admin\\Desktop\\1663873088650.jpg");
-        Employee emp2 = new Employee("spandana",2768462,23,"female","2022-09-16","winner","winner town","CEO","12352346","winner@gmail.com","C:\\Users\\Admin\\Desktop\\1663873088650.jpg");
+    private void addEmployee(ArrayList employeeList){
+        Employee emp1 = new Employee("heldon", 1234,34,"male","Sept 15, 2022","loser","losersquare","loser","12356","er@gmail.com","C:\\Users\\Admin\\Desktop\\1663873088650.jpg");
+        Employee emp2 = new Employee("spandana",2768462,23,"female","Sept 16, 2022","winner","winner town","CEO","12352346","winner@gmail.com","C:\\Users\\Admin\\Desktop\\1663873088650.jpg");
         employeeList.add(emp1);
         employeeList.add(emp2);
     }

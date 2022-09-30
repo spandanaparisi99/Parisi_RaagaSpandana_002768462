@@ -7,17 +7,13 @@ package ui;
 import business.Employee;
 import java.io.File;
 import java.text.DateFormat;
-import java.text.ParseException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import javax.swing.ButtonGroup;
 import javax.swing.ImageIcon;
 import javax.swing.JFileChooser;
 import javax.swing.JOptionPane;
-import javax.swing.JRadioButton;
 import javax.swing.filechooser.FileNameExtensionFilter;
 
 /**
@@ -29,11 +25,9 @@ public class CreatePanel extends javax.swing.JPanel {
     /**
      * Creates new form CreatePanel
      */
-    
     Employee employee;
     ArrayList<Employee> employeeList;
 
-    
     public CreatePanel(ArrayList employeeList) {
         initComponents();
         this.employee = new Employee();
@@ -266,39 +260,60 @@ public class CreatePanel extends javax.swing.JPanel {
         // TODO add your handling code here:
     }//GEN-LAST:event_name_textFieldActionPerformed
 
-    
-    
-
-    
-    
     private void createProfile_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_createProfile_btnActionPerformed
         // TODO add your handling code here:
+        
+        //converting ID in string form to integer 
         int id = Integer.parseInt(empId_textField.getText());
+        //converting age in string form to integer
         int age = Integer.parseInt(age_textField.getText());
+        
+        //checking if the age entered is a correct age or not 
+        if(age<0 || age>100){
+            JOptionPane.showMessageDialog(this, "Enter a valid age");
+        }
         
         employee.setName(name_textField.getText());
         employee.setEmployee_ID(id);
         employee.setAge(age);
+        
+        String gender = String.valueOf(genderComboBox.getSelectedItem());
+        employee.setGender(gender);
        
-       String x = String.valueOf(genderComboBox.getSelectedItem());
-       employee.setGender(x);
+        Date date = dateChooser.getDate();
+        String strDate = DateFormat.getDateInstance().format(date);
        
-       Date date = dateChooser.getDate();
-       String strDate = DateFormat.getDateInstance().format(date);
-       
-       employee.setStart_Date(strDate);
+        employee.setStart_Date(strDate);
        
         //employee.setStart_Date();
         employee.setLevel(level_textField.getText());
         employee.setTeam_info(teamInfo_textField.getText());
         employee.setPosition_Title(positionTitle_textField.getText());
         
+        String email = email_textField.getText();
+        boolean validity = emailValid(email);
+        
+        if(validity == false){
+            JOptionPane.showMessageDialog(this, "Employee profile cannot be created");
+        }
+        
+        String cellNumber = cellNum_textField.getText();
+        boolean cellPhoneValidity = phoneNumberValid(cellNumber);
+
+        if(cellPhoneValidity == false){
+            JOptionPane.showMessageDialog(this, "Employee profile cannot be created");
+        }
+        
        // employee.setCellPhoneNumber(cellNum_textField.getText());
-       // employee.setEmailAddr(email_textField.getText());
+       // employee.setEmailAddr(email_textField.getText());        
         
-        employeeList.add(employee);
+        if(validity == true && cellPhoneValidity ==true && (age>0 && age<=100)){
+            employee.setCellPhoneNumber(cellNum_textField.getText());
+            employee.setEmailAddr(email_textField.getText()); 
+            employeeList.add(employee);
+            JOptionPane.showMessageDialog(this, "Employee profile is created");
+        }
         
-        JOptionPane.showMessageDialog(this, "Employee profile is created");
         
     }//GEN-LAST:event_createProfile_btnActionPerformed
 
