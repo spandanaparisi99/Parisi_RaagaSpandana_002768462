@@ -6,10 +6,8 @@ package ui;
 
 import java.util.ArrayList;
 import business.Employee;
-import javax.swing.JTable;
+import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-import javax.swing.table.TableModel;
-import javax.swing.table.TableRowSorter;
 
 /**
  *
@@ -68,7 +66,7 @@ public class SearchPanel extends javax.swing.JPanel {
 
         searchBy_lbl.setText("Search By:");
 
-        searchByComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Name", "Employee ID", "Age", "Gender", "Start Date" }));
+        searchByComboBox.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Name", "Employee ID", "Age", "Gender" }));
         searchByComboBox.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 searchByComboBoxActionPerformed(evt);
@@ -136,7 +134,7 @@ public class SearchPanel extends javax.swing.JPanel {
         addSearchedRowToJTable(y);
     }//GEN-LAST:event_searchByButtonActionPerformed
 
-public void addRowToJTable()
+private void addRowToJTable()
     {
         
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
@@ -161,9 +159,6 @@ public void addRowToJTable()
                 
     }
 
-
-    private TableModel model;
-    private TableRowSorter sorter;
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
@@ -179,7 +174,7 @@ public void addRowToJTable()
         ArrayList<Employee> empList = new ArrayList<Employee>();
         
         String x = String.valueOf(searchByComboBox.getSelectedItem());
-        //Name, Employee ID, Age, Gender, Start Date
+        //Name, Employee ID, Age, Gender
         
         if("Name".equals(x)){
          for(Employee e: employeeList){
@@ -212,17 +207,10 @@ public void addRowToJTable()
            }
        }
         }
-        else if("Start Date".equals(x)){
-            for(Employee e: employeeList){
-           if(e.getStart_Date().equals(y)){
-               empList.add(e);
-           }
-       }
         
+        if(empList.isEmpty()){
+            JOptionPane.showMessageDialog(this, "No such employee exists.");
         }
-        
-        
-       
         
         DefaultTableModel model = (DefaultTableModel) jTable1.getModel();
         model.setRowCount(0); 

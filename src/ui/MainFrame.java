@@ -26,8 +26,8 @@ public class MainFrame extends javax.swing.JFrame {
     }
     
     private void addEmployee(ArrayList employeeList){
-        Employee emp1 = new Employee("heldon", 1234,34,"male","Sept 15, 2022","loser","losersquare","loser","12356","er@gmail.com","C:\\Users\\Admin\\Desktop\\1663873088650.jpg");
-        Employee emp2 = new Employee("spandana",2768462,23,"female","Sept 16, 2022","winner","winner town","CEO","12352346","winner@gmail.com","C:\\Users\\Admin\\Desktop\\1663873088650.jpg");
+        Employee emp1 = new Employee("sheldon", 56279,24,"male","Sept 15, 2022","junior","cybersecurity","security analyst","5677293489","sheldon@gmail.com","C:\\Users\\Admin\\Desktop\\1663873088650.jpg");
+        Employee emp2 = new Employee("spandana",27684,23,"female","Sept 16, 2022","entry","software team","summer intern","4682956197","spandana@gmail.com","C:\\Users\\Admin\\Desktop\\1663873088650.jpg");
         employeeList.add(emp1);
         employeeList.add(emp2);
     }

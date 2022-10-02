@@ -16,84 +16,80 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Group type="102" alignment="0" attributes="0">
+          <Group type="102" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="147" max="-2" attributes="0"/>
-                      <Component id="name_lbl" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="-2" attributes="0"/>
-                      <Component id="name_textField" min="-2" pref="293" max="-2" attributes="0"/>
-                  </Group>
-                  <Group type="102" alignment="1" attributes="0">
-                      <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="1" attributes="0">
-                          <Component id="age_lbl" min="-2" max="-2" attributes="0"/>
-                          <Component id="employeeId_lbl" min="-2" max="-2" attributes="0"/>
-                          <Component id="gender_lbl" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="startDate_lbl" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="level_lbl" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="teamInfo_lbl" min="-2" max="-2" attributes="0"/>
-                          <Component id="positionTitle_lbl" alignment="1" min="-2" max="-2" attributes="0"/>
-                          <Component id="cellNum_lbl" min="-2" max="-2" attributes="0"/>
-                          <Component id="email_lbl" alignment="1" min="-2" max="-2" attributes="0"/>
-                      </Group>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Group type="102" attributes="0">
-                              <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
-                              <Component id="empId_textField" min="-2" pref="290" max="-2" attributes="0"/>
-                          </Group>
                           <Group type="102" alignment="0" attributes="0">
+                              <EmptySpace min="-2" pref="147" max="-2" attributes="0"/>
+                              <Component id="name_lbl" min="-2" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
+                              <Component id="name_textField" min="-2" pref="293" max="-2" attributes="0"/>
+                          </Group>
+                          <Group type="102" alignment="1" attributes="0">
+                              <EmptySpace min="-2" pref="78" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="1" attributes="0">
+                                  <Component id="age_lbl" min="-2" max="-2" attributes="0"/>
+                                  <Component id="employeeId_lbl" min="-2" max="-2" attributes="0"/>
+                                  <Component id="gender_lbl" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="startDate_lbl" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="level_lbl" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="teamInfo_lbl" min="-2" max="-2" attributes="0"/>
+                                  <Component id="positionTitle_lbl" alignment="1" min="-2" max="-2" attributes="0"/>
+                                  <Component id="cellNum_lbl" min="-2" max="-2" attributes="0"/>
+                                  <Component id="email_lbl" alignment="1" min="-2" max="-2" attributes="0"/>
+                              </Group>
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" attributes="0">
-                                      <Component id="email_textField" min="-2" pref="194" max="-2" attributes="0"/>
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="emailCheckBtn" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace min="-2" pref="6" max="-2" attributes="0"/>
+                                      <Component id="empId_textField" min="-2" pref="290" max="-2" attributes="0"/>
                                   </Group>
-                                  <Component id="dateChooser" min="-2" pref="295" max="-2" attributes="0"/>
-                                  <Component id="level_textField" min="-2" pref="292" max="-2" attributes="0"/>
-                                  <Component id="teamInfo_textField" min="-2" pref="292" max="-2" attributes="0"/>
-                                  <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
-                                      <Component id="age_textField" alignment="0" max="32767" attributes="0"/>
-                                      <Component id="genderComboBox" alignment="0" max="32767" attributes="0"/>
-                                  </Group>
-                                  <Component id="positionTitle_textField" min="-2" pref="292" max="-2" attributes="0"/>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <Component id="cellNum_textField" min="-2" pref="194" max="-2" attributes="0"/>
                                       <EmptySpace max="-2" attributes="0"/>
-                                      <Component id="numberCheckBtn" min="-2" max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" attributes="0">
+                                              <Component id="email_textField" min="-2" pref="194" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="emailCheckBtn" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                          <Component id="dateChooser" min="-2" pref="295" max="-2" attributes="0"/>
+                                          <Component id="level_textField" min="-2" pref="292" max="-2" attributes="0"/>
+                                          <Component id="teamInfo_textField" min="-2" pref="292" max="-2" attributes="0"/>
+                                          <Group type="103" alignment="0" groupAlignment="1" max="-2" attributes="0">
+                                              <Component id="age_textField" alignment="0" max="32767" attributes="0"/>
+                                              <Component id="genderComboBox" alignment="0" max="32767" attributes="0"/>
+                                          </Group>
+                                          <Component id="positionTitle_textField" min="-2" pref="292" max="-2" attributes="0"/>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="cellNum_textField" min="-2" pref="194" max="-2" attributes="0"/>
+                                              <EmptySpace max="-2" attributes="0"/>
+                                              <Component id="numberCheckBtn" min="-2" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
                                   </Group>
                               </Group>
+                              <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
                           </Group>
                       </Group>
-                      <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
-                  </Group>
-              </Group>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" attributes="0">
-                      <EmptySpace pref="8" max="32767" attributes="0"/>
-                      <Component id="image_lbl" min="-2" pref="169" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="103" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="image_lbl" min="-2" pref="169" max="-2" attributes="0"/>
+                          <Group type="102" alignment="1" attributes="0">
+                              <Component id="browseImage_btn" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="26" max="-2" attributes="0"/>
+                          </Group>
+                      </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="44" max="-2" attributes="0"/>
-                      <Component id="browseImage_btn" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace max="32767" attributes="0"/>
-                  </Group>
-              </Group>
-          </Group>
-          <Group type="102" alignment="1" attributes="0">
-              <EmptySpace max="32767" attributes="0"/>
-              <Group type="103" groupAlignment="0" attributes="0">
-                  <Group type="102" alignment="1" attributes="0">
+                      <EmptySpace min="-2" pref="253" max="-2" attributes="0"/>
                       <Component id="createProfile_btn" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="312" max="-2" attributes="0"/>
                   </Group>
-                  <Group type="102" alignment="1" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="310" max="-2" attributes="0"/>
                       <Component id="create_label" min="-2" pref="213" max="-2" attributes="0"/>
-                      <EmptySpace min="-2" pref="279" max="-2" attributes="0"/>
                   </Group>
               </Group>
+              <EmptySpace pref="67" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -102,9 +98,9 @@
           <Group type="102" alignment="0" attributes="0">
               <Group type="103" groupAlignment="0" attributes="0">
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="34" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="24" max="-2" attributes="0"/>
                       <Component id="create_label" min="-2" pref="34" max="-2" attributes="0"/>
-                      <EmptySpace type="separate" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="3" attributes="0">
                           <Component id="name_lbl" alignment="3" min="-2" max="-2" attributes="0"/>
                           <Component id="name_textField" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -158,15 +154,15 @@
                       </Group>
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
-                      <EmptySpace min="-2" pref="108" max="-2" attributes="0"/>
+                      <EmptySpace min="-2" pref="102" max="-2" attributes="0"/>
                       <Component id="image_lbl" min="-2" pref="147" max="-2" attributes="0"/>
-                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="browseImage_btn" min="-2" max="-2" attributes="0"/>
                   </Group>
               </Group>
-              <EmptySpace min="-2" pref="45" max="-2" attributes="0"/>
+              <EmptySpace type="separate" max="-2" attributes="0"/>
               <Component id="createProfile_btn" min="-2" max="-2" attributes="0"/>
-              <EmptySpace pref="45" max="32767" attributes="0"/>
+              <EmptySpace pref="72" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>

@@ -138,72 +138,69 @@ public class CreatePanel extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(147, 147, 147)
-                        .addComponent(name_lbl)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(name_textField, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(78, 78, 78)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(age_lbl)
-                            .addComponent(employeeId_lbl)
-                            .addComponent(gender_lbl)
-                            .addComponent(startDate_lbl)
-                            .addComponent(level_lbl)
-                            .addComponent(teamInfo_lbl)
-                            .addComponent(positionTitle_lbl)
-                            .addComponent(cellNum_lbl)
-                            .addComponent(email_lbl))
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(6, 6, 6)
-                                .addComponent(empId_textField, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(layout.createSequentialGroup()
+                                .addGap(147, 147, 147)
+                                .addComponent(name_lbl)
                                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(name_textField, javax.swing.GroupLayout.PREFERRED_SIZE, 293, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addGap(78, 78, 78)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(age_lbl)
+                                    .addComponent(employeeId_lbl)
+                                    .addComponent(gender_lbl)
+                                    .addComponent(startDate_lbl)
+                                    .addComponent(level_lbl)
+                                    .addComponent(teamInfo_lbl)
+                                    .addComponent(positionTitle_lbl)
+                                    .addComponent(cellNum_lbl)
+                                    .addComponent(email_lbl))
                                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(email_textField, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(emailCheckBtn))
-                                    .addComponent(dateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 295, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(level_textField, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(teamInfo_textField, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                                        .addComponent(age_textField, javax.swing.GroupLayout.Alignment.LEADING)
-                                        .addComponent(genderComboBox, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                                    .addComponent(positionTitle_textField, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                        .addGap(6, 6, 6)
+                                        .addComponent(empId_textField, javax.swing.GroupLayout.PREFERRED_SIZE, 290, javax.swing.GroupLayout.PREFERRED_SIZE))
                                     .addGroup(layout.createSequentialGroup()
-                                        .addComponent(cellNum_textField, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
                                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                        .addComponent(numberCheckBtn)))))
-                        .addGap(45, 45, 45)))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 8, Short.MAX_VALUE)
-                        .addComponent(image_lbl, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(103, 103, 103))
-                    .addGroup(layout.createSequentialGroup()
+                                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(email_textField, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(emailCheckBtn))
+                                            .addComponent(dateChooser, javax.swing.GroupLayout.PREFERRED_SIZE, 295, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(level_textField, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addComponent(teamInfo_textField, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                                .addComponent(age_textField, javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(genderComboBox, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                                            .addComponent(positionTitle_textField, javax.swing.GroupLayout.PREFERRED_SIZE, 292, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                            .addGroup(layout.createSequentialGroup()
+                                                .addComponent(cellNum_textField, javax.swing.GroupLayout.PREFERRED_SIZE, 194, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                                .addComponent(numberCheckBtn)))))
+                                .addGap(45, 45, 45)))
                         .addGap(44, 44, 44)
-                        .addComponent(browseImage_btn)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(createProfile_btn)
-                        .addGap(312, 312, 312))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(create_label, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(279, 279, 279))))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(image_lbl, javax.swing.GroupLayout.PREFERRED_SIZE, 169, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                                .addComponent(browseImage_btn)
+                                .addGap(26, 26, 26))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(253, 253, 253)
+                        .addComponent(createProfile_btn))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(310, 310, 310)
+                        .addComponent(create_label, javax.swing.GroupLayout.PREFERRED_SIZE, 213, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(67, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(34, 34, 34)
+                        .addGap(24, 24, 24)
                         .addComponent(create_label, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
+                        .addGap(28, 28, 28)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(name_lbl)
                             .addComponent(name_textField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
@@ -246,13 +243,13 @@ public class CreatePanel extends javax.swing.JPanel {
                             .addComponent(email_textField, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(emailCheckBtn)))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(108, 108, 108)
+                        .addGap(102, 102, 102)
                         .addComponent(image_lbl, javax.swing.GroupLayout.PREFERRED_SIZE, 147, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGap(18, 18, 18)
                         .addComponent(browseImage_btn)))
-                .addGap(45, 45, 45)
+                .addGap(18, 18, 18)
                 .addComponent(createProfile_btn)
-                .addContainerGap(45, Short.MAX_VALUE))
+                .addContainerGap(72, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
@@ -294,18 +291,15 @@ public class CreatePanel extends javax.swing.JPanel {
         boolean validity = emailValid(email);
         
         if(validity == false){
-            JOptionPane.showMessageDialog(this, "Employee profile cannot be created");
+            JOptionPane.showMessageDialog(this, "Employee profile cannot be created. Enter a valid email address");
         }
         
         String cellNumber = cellNum_textField.getText();
         boolean cellPhoneValidity = phoneNumberValid(cellNumber);
 
         if(cellPhoneValidity == false){
-            JOptionPane.showMessageDialog(this, "Employee profile cannot be created");
-        }
-        
-       // employee.setCellPhoneNumber(cellNum_textField.getText());
-       // employee.setEmailAddr(email_textField.getText());        
+            JOptionPane.showMessageDialog(this, "Enter a valid phone number. Employee profile cannot be created");
+        }       
         
         if(validity == true && cellPhoneValidity ==true && (age>0 && age<=100)){
             employee.setCellPhoneNumber(cellNum_textField.getText());
@@ -313,8 +307,6 @@ public class CreatePanel extends javax.swing.JPanel {
             employeeList.add(employee);
             JOptionPane.showMessageDialog(this, "Employee profile is created");
         }
-        
-        
     }//GEN-LAST:event_createProfile_btnActionPerformed
 
     private void browseImage_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_browseImage_btnActionPerformed
@@ -329,9 +321,6 @@ public class CreatePanel extends javax.swing.JPanel {
             File selectedImageFile = browseImageFile.getSelectedFile();
             String selectedImagePath = selectedImageFile.getAbsolutePath();
             JOptionPane.showMessageDialog(null, selectedImagePath);
-            
-            //ImageIcon li = new ImageIcon(selectedImagePath);
-           // image_lbl.setIcon(li);
             
             employee.setImageFilePath(selectedImagePath);
             
@@ -352,13 +341,12 @@ public class CreatePanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(this, "Valid Phone Number");
         }
         else{
-            JOptionPane.showMessageDialog(null, "There's a bug on you!","Hey!", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Invalid phone number. Enter again.","Error", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_numberCheckBtnActionPerformed
 
     private void emailCheckBtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailCheckBtnActionPerformed
         // TODO add your handling code here:
-        
         String email = email_textField.getText();
         boolean validity = emailValid(email);
         
@@ -367,7 +355,7 @@ public class CreatePanel extends javax.swing.JPanel {
             JOptionPane.showMessageDialog(this, "Valid Address");
         }
         else{
-            JOptionPane.showMessageDialog(null, "There's a bug on you!","Hey!", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "Invalid Email Address. Enter Again.","Error", JOptionPane.ERROR_MESSAGE);
         }
     }//GEN-LAST:event_emailCheckBtnActionPerformed
 
