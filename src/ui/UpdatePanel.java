@@ -262,6 +262,7 @@ public class UpdatePanel extends javax.swing.JPanel {
     private void readProfile_btnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_readProfile_btnActionPerformed
         // TODO add your handling code here:
         String y = readProfile_textField.getText();
+        
         displayEmployee(y);
     }//GEN-LAST:event_readProfile_btnActionPerformed
 
@@ -276,8 +277,8 @@ public class UpdatePanel extends javax.swing.JPanel {
             if(e.getEmployee_ID() == z){
                 employee = e;
             }
-   
         }
+        
         
         employee.setName(name_textField.getText());
         String q = empId_textField.getText();
@@ -311,6 +312,9 @@ public class UpdatePanel extends javax.swing.JPanel {
         for(Employee e: employeeList){
             if(e.getEmployee_ID() == z){
                 employee = e;
+            }
+            else{
+            JOptionPane.showMessageDialog(this, "No such employee exists.");
             }
         }
         
