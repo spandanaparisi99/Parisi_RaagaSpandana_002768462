@@ -320,6 +320,7 @@ public class CreatePanel extends javax.swing.JPanel {
         if(showOpenDialogue == JFileChooser.APPROVE_OPTION){
             File selectedImageFile = browseImageFile.getSelectedFile();
             String selectedImagePath = selectedImageFile.getAbsolutePath();
+            
             JOptionPane.showMessageDialog(null, selectedImagePath);
             
             employee.setImageFilePath(selectedImagePath);
@@ -327,6 +328,7 @@ public class CreatePanel extends javax.swing.JPanel {
             ImageIcon imageIcon = new ImageIcon(new ImageIcon(selectedImagePath).getImage().getScaledInstance(image_lbl.getWidth(), image_lbl.getHeight(), 1));
             image_lbl.setIcon(imageIcon);
         }
+       
         
         
     }//GEN-LAST:event_browseImage_btnActionPerformed
